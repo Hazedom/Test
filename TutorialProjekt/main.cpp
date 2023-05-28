@@ -12,8 +12,14 @@ int main() {
 	
 	cout << "Nummer zur Ueberpruefung eingeben:" << " ";
 	cin >> fzbznum;
-	cout << FizzBuzz(fzbznum) << endl;
-
+	
+	if (fzbznum == 0) {
+		cout << "Keine Null oder Charaktere eingeben." << endl;
+		return 1;
+	}
+	else {
+		cout << FizzBuzz(fzbznum) << endl;
+	}
 
 	return 0;
 }
